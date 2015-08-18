@@ -64,14 +64,42 @@ function stanford_fellowship_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__stanford_fellowship';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '2',
+          'weight' => '10',
         ),
         'title' => array(
           'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '13',
+        ),
+        'redirect' => array(
+          'weight' => '12',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '11',
         ),
       ),
       'display' => array(),
