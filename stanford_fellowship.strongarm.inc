@@ -95,31 +95,11 @@ function stanford_fellowship_strongarm() {
         'path' => array(
           'weight' => '13',
         ),
-        'redirect' => array(
-          'weight' => '12',
-        ),
-        'xmlsitemap' => array(
-          'weight' => '11',
-        ),
       ),
       'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__stanford_fellowship'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_stanford_fellowship';
-  $strongarm->value = array();
-  $export['menu_options_stanford_fellowship'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_stanford_fellowship';
-  $strongarm->value = 'main-menu:0';
-  $export['menu_parent_stanford_fellowship'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
