@@ -290,9 +290,9 @@ function stanford_fellowship_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['path'] = 'admin/manage/stanford_affiliate_organizations';
+  $handler->display->display_options['path'] = 'admin/manage/stanford_fellowship';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Manage Affiliate Organizations';
+  $handler->display->display_options['menu']['title'] = 'Manage Stanford Fellowships';
   $handler->display->display_options['menu']['weight'] = '';
   $handler->display->display_options['menu']['name'] = 'menu-manage-content-by-type';
   $handler->display->display_options['menu']['context'] = 0;
