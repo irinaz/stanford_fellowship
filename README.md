@@ -14,9 +14,7 @@ Configuration
 ---
 
 1. Install module
-2. Create gallery tabs
-3. Chose the sorting order on the manage page
-4. Place gallery block
+2. Create Fellowship nodes.
 
 Contribution / Collaboration
 ---
