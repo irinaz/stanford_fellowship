@@ -21,7 +21,7 @@ function stanford_fellowship_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Application',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_s_fellowship_applic_mater',
       1 => 'field_s_fellowship_applic_proces',
@@ -52,7 +52,7 @@ function stanford_fellowship_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Eligibility',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_s_fellowship_eligibility',
       1 => 'field_s_fellowship_open_to',
