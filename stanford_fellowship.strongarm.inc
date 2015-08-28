@@ -69,7 +69,7 @@ function stanford_fellowship_strongarm() {
         'custom_settings' => TRUE,
       ),
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -83,6 +83,15 @@ function stanford_fellowship_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_8_col_banner' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -94,6 +103,12 @@ function stanford_fellowship_strongarm() {
         ),
         'path' => array(
           'weight' => '14',
+        ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(),
