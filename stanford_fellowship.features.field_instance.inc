@@ -18,7 +18,7 @@ function stanford_fellowship_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'custom_link_to_entity' => '',
@@ -34,7 +34,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -134,7 +134,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'text_default',
-        'weight' => 32,
+        'weight' => 17,
       ),
       'full' => array(
         'label' => 'inline',
@@ -231,7 +231,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'file_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -336,7 +336,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',
@@ -439,7 +439,7 @@ function stanford_fellowship_field_default_field_instances() {
           'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'above',
@@ -619,7 +619,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'text_default',
-        'weight' => 21,
+        'weight' => 16,
       ),
       'full' => array(
         'label' => 'inline',
@@ -810,7 +810,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'list_default',
-        'weight' => 20,
+        'weight' => 15,
       ),
       'full' => array(
         'label' => 'inline',
@@ -879,7 +879,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'inline',
@@ -977,7 +977,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'list_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1051,7 +1051,7 @@ function stanford_fellowship_field_default_field_instances() {
           'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',
@@ -1139,7 +1139,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'text_default',
-        'weight' => 33,
+        'weight' => 18,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1210,7 +1210,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'list_default',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1280,7 +1280,7 @@ function stanford_fellowship_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 20,
+        'weight' => 14,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1350,7 +1350,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'link_default',
-        'weight' => 5,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -1439,23 +1439,23 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(
-          'custom_link_to_entity' => 0,
+          'custom_link_to_entity' => '',
           'custom_prefix' => '',
-          'custom_reverse' => 0,
+          'custom_reverse' => '',
           'custom_strip_preserve' => '',
-          'custom_strip_tags' => 0,
-          'custom_strtolower' => 0,
-          'custom_strtoupper' => 0,
+          'custom_strip_tags' => '',
+          'custom_strtolower' => '',
+          'custom_strtoupper' => '',
           'custom_suffix' => '',
-          'custom_trim' => 0,
-          'custom_ucfirst' => 0,
-          'custom_ucwords' => 0,
+          'custom_trim' => '',
+          'custom_ucfirst' => '',
+          'custom_ucwords' => '',
         ),
         'type' => 'text_default',
         'weight' => 4,
@@ -1537,7 +1537,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',

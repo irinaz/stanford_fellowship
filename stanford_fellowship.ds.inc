@@ -44,7 +44,6 @@ function stanford_fellowship_ds_layout_settings_info() {
         15 => 'field_s_fellowship_deadline_peri',
         16 => 'field_s_fellowship_campus_interv',
         17 => 'field_s_fellowship_info_session',
-        18 => 'group_dates',
       ),
     ),
     'fields' => array(
@@ -66,7 +65,6 @@ function stanford_fellowship_ds_layout_settings_info() {
       'field_s_fellowship_deadline_peri' => 'fellowship_important_dates',
       'field_s_fellowship_campus_interv' => 'fellowship_important_dates',
       'field_s_fellowship_info_session' => 'fellowship_important_dates',
-      'group_dates' => 'fellowship_important_dates',
     ),
     'classes' => array(),
     'wrappers' => array(

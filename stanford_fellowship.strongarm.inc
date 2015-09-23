@@ -69,7 +69,7 @@ function stanford_fellowship_strongarm() {
         'custom_settings' => TRUE,
       ),
       'full' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -115,6 +115,20 @@ function stanford_fellowship_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__stanford_fellowship'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_stanford_fellowship';
+  $strongarm->value = array();
+  $export['menu_options_stanford_fellowship'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_stanford_fellowship';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_stanford_fellowship'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
