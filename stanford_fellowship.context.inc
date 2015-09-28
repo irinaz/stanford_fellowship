@@ -33,7 +33,7 @@ function stanford_fellowship_context_default_contexts() {
           'module' => 'ds_extras',
           'delta' => 'fellowship_important_dates',
           'region' => 'content',
-          'weight' => '-10',
+          'weight' => '-1',
         ),
         'ds_extras-eligibility' => array(
           'module' => 'ds_extras',

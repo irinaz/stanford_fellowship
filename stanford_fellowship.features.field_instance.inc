@@ -794,7 +794,7 @@ function stanford_fellowship_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(
           'custom_link_to_entity' => '',
@@ -810,7 +810,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'list_default',
-        'weight' => 15,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'inline',
@@ -961,7 +961,7 @@ function stanford_fellowship_field_default_field_instances() {
     'description' => 'Advising offered or fellowships administered by Stanford ',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(
           'custom_link_to_entity' => '',
@@ -977,7 +977,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'list_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1263,7 +1263,7 @@ function stanford_fellowship_field_default_field_instances() {
     'description' => 'If you cannot find an organization that provides the fellowship, please add it first at <a href="/node/add/stanford-affiliate-organization">/node/add/stanford-affiliate-organization</a> and then add the fellowship',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
           'custom_link_to_entity' => '',
@@ -1280,7 +1280,7 @@ function stanford_fellowship_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 14,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1334,7 +1334,7 @@ function stanford_fellowship_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'link',
         'settings' => array(
           'custom_link_to_entity' => '',
@@ -1350,7 +1350,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'link_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'above',

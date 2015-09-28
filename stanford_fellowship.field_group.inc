@@ -29,16 +29,17 @@ function stanford_fellowship_field_group_info() {
     ),
     'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Additional Information',
       'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-addl-info field-group-div',
         'description' => '',
-        'show_label' => 1,
+        'show_label' => '1',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
-        'classes' => 'group-addl-info field-group-div',
-        'id' => '',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_addl_info|node|stanford_fellowship|default'] = $field_group;
@@ -110,42 +111,6 @@ function stanford_fellowship_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_content|node|stanford_fellowship|default';
-  $field_group->group_name = 'group_content';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'stanford_fellowship';
-  $field_group->mode = 'default';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Content',
-    'weight' => '10',
-    'children' => array(
-      0 => 'field_s_fellowship_duration',
-      1 => 'field_s_fellowship_external',
-      2 => 'field_s_fellowship_related_links',
-      3 => 'field_s_fellowship_organization',
-      4 => 'body',
-    ),
-    'format_type' => 'div',
-    'format_settings' => array(
-      'label' => 'Content',
-      'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-content field-group-div postcard',
-        'description' => '',
-        'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-      ),
-      'formatter' => 'open',
-    ),
-  );
-  $export['group_content|node|stanford_fellowship|default'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_eligibility|node|stanford_fellowship|default';
   $field_group->group_name = 'group_eligibility';
   $field_group->entity_type = 'node';
@@ -166,14 +131,14 @@ function stanford_fellowship_field_group_info() {
       'label' => 'Eligibility',
       'instance_settings' => array(
         'id' => '',
-        'classes' => 'group-eligibility field-group-div well',
+        'classes' => 'group-eligibility field-group-div  ',
         'description' => '',
         'show_label' => '1',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
       ),
-      'formatter' => 'collapsible',
+      'formatter' => 'open',
     ),
   );
   $export['group_eligibility|node|stanford_fellowship|default'] = $field_group;
@@ -216,7 +181,7 @@ function stanford_fellowship_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'stanford_fellowship';
   $field_group->mode = 'default';
-  $field_group->parent_name = '';
+  $field_group->parent_name = 'group_s_postcard';
   $field_group->data = array(
     'label' => 'Important Dates',
     'weight' => '1',
@@ -231,17 +196,86 @@ function stanford_fellowship_field_group_info() {
       'label' => 'Important Dates',
       'instance_settings' => array(
         'id' => '',
-        'classes' => 'group-important-dates field-group-div well pull-right span4',
+        'classes' => 'group-important-dates field-group-div group_s_postcard_image well',
         'description' => '',
         'show_label' => '1',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
       ),
-      'formatter' => 'collapsible',
+      'formatter' => 'open',
     ),
   );
   $export['group_important_dates|node|stanford_fellowship|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_postcard_content|node|stanford_fellowship|default';
+  $field_group->group_name = 'group_s_postcard_content';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'stanford_fellowship';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_s_postcard';
+  $field_group->data = array(
+    'label' => 'Postcard Content',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_s_fellowship_duration',
+      1 => 'field_s_fellowship_external',
+      2 => 'field_s_fellowship_related_links',
+      3 => 'field_s_fellowship_organization',
+      4 => 'body',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Postcard Content',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'postcard-content',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_s_postcard_content|node|stanford_fellowship|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_s_postcard|node|stanford_fellowship|default';
+  $field_group->group_name = 'group_s_postcard';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'stanford_fellowship';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_content';
+  $field_group->data = array(
+    'label' => 'Postcard',
+    'weight' => '43',
+    'children' => array(
+      0 => 'group_important_dates',
+      1 => 'group_s_postcard_content',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Postcard',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-s-postcard field-group-div ',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_s_postcard|node|stanford_fellowship|default'] = $field_group;
 
   return $export;
 }
