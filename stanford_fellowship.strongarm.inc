@@ -83,6 +83,18 @@ function stanford_fellowship_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_8_col_banner' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+      'taxonomy' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -95,11 +107,31 @@ function stanford_fellowship_strongarm() {
         'path' => array(
           'weight' => '14',
         ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__stanford_fellowship'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_stanford_fellowship';
+  $strongarm->value = array();
+  $export['menu_options_stanford_fellowship'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_stanford_fellowship';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_stanford_fellowship'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -123,6 +155,13 @@ function stanford_fellowship_strongarm() {
   $strongarm->name = 'node_submitted_stanford_fellowship';
   $strongarm->value = 0;
   $export['node_submitted_stanford_fellowship'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_stanford_fellowship_pattern';
+  $strongarm->value = 'fellowship/[node:title]';
+  $export['pathauto_node_stanford_fellowship_pattern'] = $strongarm;
 
   return $export;
 }

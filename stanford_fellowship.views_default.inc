@@ -126,6 +126,14 @@ function stanford_fellowship_views_default_views() {
       'empty_column' => 0,
     ),
   );
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['label'] = 'Sorry';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<p>Sorry, but there is no content available. You should go and create some.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'content_editor_text_format';
   /* Relationship: Field: Image (field_s_image_info) */
   $handler->display->display_options['relationships']['field_s_image_info_value']['id'] = 'field_s_image_info_value';
   $handler->display->display_options['relationships']['field_s_image_info_value']['table'] = 'field_data_field_s_image_info';
@@ -319,6 +327,7 @@ function stanford_fellowship_views_default_views() {
   $handler->display->display_options['menu']['weight'] = '';
   $handler->display->display_options['menu']['name'] = 'menu-manage-content-by-type';
   $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $export['stanford_fellowship_manage'] = $view;
 
   return $export;
