@@ -5,25 +5,9 @@
  */
 
 /**
- * Implements hook_block_class_features_default_class().
- */
-function stanford_fellowship_block_class_features_default_class() {
-  return array(
-    'ds_extras:fellowship_important_dates' => array(
-      'module' => 'ds_extras',
-      'delta' => 'fellowship_important_dates',
-      'css_classes' => 'pull-right span4  well',
-    ),
-  );
-}
-
-/**
  * Implements hook_ctools_plugin_api().
  */
 function stanford_fellowship_ctools_plugin_api($module = NULL, $api = NULL) {
-  if ($module == "context" && $api == "context") {
-    return array("version" => "3");
-  }
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
