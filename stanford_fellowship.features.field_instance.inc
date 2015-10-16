@@ -105,7 +105,7 @@ function stanford_fellowship_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
@@ -203,7 +203,77 @@ function stanford_fellowship_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-stanford_fellowship-field_s_fellowship_applic_links'
+  $field_instances['node-stanford_fellowship-field_s_fellowship_applic_links'] = array(
+    'bundle' => 'stanford_fellowship',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(
+          'custom_link_to_entity' => '',
+          'custom_prefix' => '',
+          'custom_reverse' => '',
+          'custom_strip_preserve' => '',
+          'custom_strip_tags' => '',
+          'custom_strtolower' => '',
+          'custom_strtoupper' => '',
+          'custom_suffix' => '',
+          'custom_trim' => '',
+          'custom_ucfirst' => '',
+          'custom_ucwords' => '',
+        ),
+        'type' => 'link_default',
+        'weight' => 24,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_fellowship_applic_links',
+    'label' => 'Application Link(s)',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 10,
     ),
   );
 
@@ -231,7 +301,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'file_default',
-        'weight' => 9,
+        'weight' => 23,
       ),
       'full' => array(
         'label' => 'above',
@@ -261,12 +331,12 @@ function stanford_fellowship_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_fellowship_applic_mater',
-    'label' => 'Application Materials',
+    'label' => 'Download Application Files',
     'required' => 0,
     'settings' => array(
-      'description_field' => 0,
+      'description_field' => 1,
       'file_directory' => '',
-      'file_extensions' => 'txt doc docx pdf xls xlsx ppt pptx',
+      'file_extensions' => 'txt doc docx pdf',
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
@@ -274,40 +344,105 @@ function stanford_fellowship_field_default_field_instances() {
       'active' => 1,
       'module' => 'file',
       'settings' => array(
-        'filefield_sources' => array(
-          'filefield_sources' => array(
-            'attach' => 0,
-            'clipboard' => 0,
-            'reference' => 0,
-            'remote' => 0,
-            'upload' => 'upload',
-          ),
-          'source_attach' => array(
-            'absolute' => 0,
-            'attach_mode' => 'move',
-            'path' => 'file_attach',
-          ),
-          'source_imce' => array(
-            'imce_mode' => 0,
-          ),
-          'source_reference' => array(
-            'autocomplete' => 0,
-          ),
-        ),
         'insert' => 0,
-        'insert_absolute' => FALSE,
+        'insert_absolute' => 0,
         'insert_class' => '',
-        'insert_default' => array(
-          0 => 'auto',
-        ),
+        'insert_default' => 'auto',
         'insert_styles' => array(
-          0 => 'auto',
+          'auto' => 'auto',
+          'colorbox__3-col-header' => 0,
+          'colorbox__4-col-header' => 0,
+          'colorbox__6-col-banner' => 0,
+          'colorbox__6-col-banner-short' => 0,
+          'colorbox__6-col-banner-tall' => 0,
+          'colorbox__6-col-photo-landscape' => 0,
+          'colorbox__8-col-banner' => 0,
+          'colorbox__8-col-banner-short' => 0,
+          'colorbox__8-col-banner-tall' => 0,
+          'colorbox__9-col-banner' => 0,
+          'colorbox__9-col-banner-short' => 0,
+          'colorbox__12-col-banner' => 0,
+          'colorbox__12-col-banner-tall' => 0,
+          'colorbox__full-width-banner' => 0,
+          'colorbox__full-width-banner-short' => 0,
+          'colorbox__half-page-profile' => 0,
+          'colorbox__huge-landscape' => 0,
+          'colorbox__icon-profile' => 0,
+          'colorbox__icon-scaled' => 0,
+          'colorbox__icon-square' => 0,
+          'colorbox__large' => 0,
+          'colorbox__large-landscape' => 0,
+          'colorbox__large-landscape-scaled' => 0,
+          'colorbox__large-profile' => 0,
+          'colorbox__large-profile-scaled' => 0,
+          'colorbox__large-scaled' => 0,
+          'colorbox__large-square' => 0,
+          'colorbox__med-landscape' => 0,
+          'colorbox__med-landscape-scaled' => 0,
+          'colorbox__med-profile' => 0,
+          'colorbox__med-profile-scaled' => 0,
+          'colorbox__med-square' => 0,
+          'colorbox__medium' => 0,
+          'colorbox__page-width' => 0,
+          'colorbox__sm-landscape' => 0,
+          'colorbox__sm-profile' => 0,
+          'colorbox__sm-scaled' => 0,
+          'colorbox__sm-square' => 0,
+          'colorbox__thmb-landscape' => 0,
+          'colorbox__thmb-profile' => 0,
+          'colorbox__thmb-square' => 0,
+          'colorbox__thumbnail' => 0,
+          'icon_link' => 0,
+          'image' => 0,
+          'image_3-col-header' => 0,
+          'image_4-col-header' => 0,
+          'image_6-col-banner' => 0,
+          'image_6-col-banner-short' => 0,
+          'image_6-col-banner-tall' => 0,
+          'image_6-col-photo-landscape' => 0,
+          'image_8-col-banner' => 0,
+          'image_8-col-banner-short' => 0,
+          'image_8-col-banner-tall' => 0,
+          'image_9-col-banner' => 0,
+          'image_9-col-banner-short' => 0,
+          'image_12-col-banner' => 0,
+          'image_12-col-banner-tall' => 0,
+          'image_full-width-banner' => 0,
+          'image_full-width-banner-short' => 0,
+          'image_half-page-profile' => 0,
+          'image_huge-landscape' => 0,
+          'image_icon-profile' => 0,
+          'image_icon-scaled' => 0,
+          'image_icon-square' => 0,
+          'image_large' => 0,
+          'image_large-landscape' => 0,
+          'image_large-landscape-scaled' => 0,
+          'image_large-profile' => 0,
+          'image_large-profile-scaled' => 0,
+          'image_large-scaled' => 0,
+          'image_large-square' => 0,
+          'image_med-landscape' => 0,
+          'image_med-landscape-scaled' => 0,
+          'image_med-profile' => 0,
+          'image_med-profile-scaled' => 0,
+          'image_med-square' => 0,
+          'image_medium' => 0,
+          'image_page-width' => 0,
+          'image_sm-landscape' => 0,
+          'image_sm-profile' => 0,
+          'image_sm-scaled' => 0,
+          'image_sm-square' => 0,
+          'image_thmb-landscape' => 0,
+          'image_thmb-profile' => 0,
+          'image_thmb-square' => 0,
+          'image_thumbnail' => 0,
+          'link' => 0,
         ),
         'insert_width' => '',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 13,
+      'weight' => 9,
     ),
   );
 
@@ -405,7 +540,7 @@ function stanford_fellowship_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 12,
+      'weight' => 6,
     ),
   );
 
@@ -590,7 +725,7 @@ function stanford_fellowship_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 31,
+      'weight' => 12,
     ),
   );
 
@@ -600,7 +735,7 @@ function stanford_fellowship_field_default_field_instances() {
     'bundle' => 'stanford_fellowship',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'You can enter contact name, email , phone, url and any additional information in the text format',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -649,7 +784,7 @@ function stanford_fellowship_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_fellowship_contact_info',
-    'label' => 'Contact name, email , phone, url',
+    'label' => 'Contact',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -688,7 +823,7 @@ function stanford_fellowship_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 10,
+      'weight' => 12,
     ),
   );
 
@@ -848,9 +983,11 @@ function stanford_fellowship_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 6,
     ),
   );
 
@@ -977,7 +1114,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'list_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'full' => array(
         'label' => 'inline',
@@ -1015,9 +1152,11 @@ function stanford_fellowship_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 4,
     ),
   );
 
@@ -1110,7 +1249,57 @@ function stanford_fellowship_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 14,
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-stanford_fellowship-field_s_fellowship_location'
+  $field_instances['node-stanford_fellowship-field_s_fellowship_location'] = array(
+    'bundle' => 'stanford_fellowship',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'custom_link_to_entity' => '',
+          'custom_prefix' => '',
+          'custom_reverse' => '',
+          'custom_strip_preserve' => '',
+          'custom_strip_tags' => '',
+          'custom_strtolower' => '',
+          'custom_strtoupper' => '',
+          'custom_suffix' => '',
+          'custom_trim' => '',
+          'custom_ucfirst' => '',
+          'custom_ucwords' => '',
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 25,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_fellowship_location',
+    'label' => 'Location',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 7,
     ),
   );
 
@@ -1181,7 +1370,7 @@ function stanford_fellowship_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 11,
     ),
   );
 
@@ -1194,7 +1383,7 @@ function stanford_fellowship_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(
           'custom_link_to_entity' => '',
@@ -1266,21 +1455,21 @@ function stanford_fellowship_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'entityreference',
         'settings' => array(
-          'custom_link_to_entity' => '',
+          'custom_link_to_entity' => 0,
           'custom_prefix' => '',
-          'custom_reverse' => '',
+          'custom_reverse' => 0,
           'custom_strip_preserve' => '',
-          'custom_strip_tags' => '',
-          'custom_strtolower' => '',
-          'custom_strtoupper' => '',
+          'custom_strip_tags' => 0,
+          'custom_strtolower' => 0,
+          'custom_strtoupper' => 0,
           'custom_suffix' => '',
-          'custom_trim' => '',
-          'custom_ucfirst' => '',
-          'custom_ucwords' => '',
-          'link' => FALSE,
+          'custom_trim' => 0,
+          'custom_ucfirst' => 0,
+          'custom_ucwords' => 0,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -1319,9 +1508,11 @@ function stanford_fellowship_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -1350,7 +1541,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'above',
@@ -1410,7 +1601,7 @@ function stanford_fellowship_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 13,
     ),
   );
 
@@ -1439,7 +1630,7 @@ function stanford_fellowship_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 9,
       ),
       'full' => array(
         'label' => 'above',
@@ -1469,7 +1660,7 @@ function stanford_fellowship_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_s_fellowship_requirements',
-    'label' => 'Requirements',
+    'label' => 'Program Requirements',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -1606,7 +1797,7 @@ function stanford_fellowship_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 7,
     ),
   );
 
@@ -1614,24 +1805,27 @@ function stanford_fellowship_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Advising offered or fellowships administered by Stanford ');
   t('Amount Awarded');
-  t('Application Materials');
+  t('Application Link(s)');
   t('Application Process');
   t('Campus Application Deadline');
-  t('Contact name, email , phone, url');
+  t('Contact');
   t('Date of campus interviews');
   t('Date of information session event / applicaiton workshop');
   t('Description');
+  t('Download Application Files');
   t('Duration');
   t('Eligibility requirements');
   t('External or Stanford Fellowship');
   t('If you cannot find an organization that provides the fellowship, please add it first at <a href="/node/add/stanford-affiliate-organization">/node/add/stanford-affiliate-organization</a> and then add the fellowship');
+  t('Location');
   t('National Applications Deadline (Application Period)');
   t('Number Awarded');
   t('Open to');
   t('Organization');
+  t('Program Requirements');
   t('Related Links');
-  t('Requirements');
   t('Selection Process');
+  t('You can enter contact name, email , phone, url and any additional information in the text format');
 
   return $field_instances;
 }

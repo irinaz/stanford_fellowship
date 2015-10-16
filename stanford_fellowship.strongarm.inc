@@ -95,23 +95,26 @@ function stanford_fellowship_strongarm() {
       'taxonomy' => array(
         'custom_settings' => FALSE,
       ),
+      'stanford_huge_landscape' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '11',
+          'weight' => '14',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '17',
         ),
         'xmlsitemap' => array(
-          'weight' => '30',
+          'weight' => '16',
         ),
       ),
       'display' => array(),

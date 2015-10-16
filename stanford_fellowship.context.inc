@@ -26,30 +26,7 @@ function stanford_fellowship_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'ds_extras-fellowship_important_dates' => array(
-          'module' => 'ds_extras',
-          'delta' => 'fellowship_important_dates',
-          'region' => 'content',
-          'weight' => '-1',
-        ),
-        'ds_extras-eligibility' => array(
-          'module' => 'ds_extras',
-          'delta' => 'eligibility',
-          'region' => 'content',
-          'weight' => '1',
-        ),
-        'ds_extras-application' => array(
-          'module' => 'ds_extras',
-          'delta' => 'application',
-          'region' => 'content',
-          'weight' => '2',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables
