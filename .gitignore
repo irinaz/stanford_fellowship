@@ -1,36 +1,30 @@
-# Ignore configuration files that may contain sensitive information.
-sites/*/*settings*.php
+MAINTAINERS.txt
 
-# Ignore paths that contain generated content.
-files/
-sites/*/files
-sites/*/private
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
 
-# Ignore default text files
-robots.txt
-/CHANGELOG.txt
-/COPYRIGHT.txt
-/INSTALL*.txt
-/LICENSE.txt
-/MAINTAINERS.txt
-/UPGRADE.txt
-/README.txt
-sites/all/README.txt
-sites/all/modules/README.txt
-sites/all/themes/README.txt
+# OS or Editor folders
+.DS_Store
+.cache
+.idea
+.sass-cache
+.project
+.settings
+.tmproj
+nbproject
+Thumbs.db
+config.rb
 
-# Ignore everything but the "sites" folder ( for non core developer )
-.htaccess
-web.config
-authorize.php
-cron.php
-index.php
-install.php
-update.php
-xmlrpc.php
-/includes
-/misc
-/modules
-/profiles
-/scripts
-/themes
+# Folders to ignore
+.hg
+.svn
+.CVS
+cgi-bin
